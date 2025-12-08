@@ -1,9 +1,19 @@
 body{
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
+    justify-content: flex-start; /* centraliza horizontalmente */
     align-items: center; 
 }
-
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+h1{
+    font-size: 40px;
+    color:blue;
+ 
+}
 
 .grid-container{
     display:grid;
@@ -12,25 +22,34 @@ body{
     height: 500px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+/*Margin: auto; define margens com o tamanho do div e assim centraliza*/
+   margin:auto;
     
 }
 #blue{
 background-color: blue;
-grid-column: 2/2;
-grid-row: 2/2;
+color: black;
+grid-column: 2/3;
+grid-row: 2/3;
+/*Esse somente funciona nos itens dentro do container principal*/
+/*Nesse caso  o container principal,"pai" é o grid-container*/
+ justify-self:center;
+    align-self:center;
+    width: 100%;                /* ocupa toda a largura da célula */
+    height: 100%
 }
 #red{
     background-color: red;
-grid-column: 1/1;
-grid-row: 1/1;
+grid-column: 1/2;
+grid-row: 1/2;
 }
 #green{
     background-color: green;
-grid-column: 3/3;
-grid-row: 3/3;
+grid-column: 3/4;
+grid-row: 3/4;
 }
 #pink{
     background-color: pink;
-grid-column: 2/2;
-grid-row: 3/3;
+grid-column: 2/3;
+grid-row: 3/4;
 }
