@@ -1,0 +1,45 @@
+#countLabel{
+    display:block;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Times New Roman';
+}
+#btnContainer{
+    text-align:center;
+
+}
+.buttons{
+padding: 10px 20px;
+font-size: 1.5em;
+color:white;
+background-color: blue;
+border-radius: 5px;
+cursor:pointer;
+transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(3, 3, 104);
+}
+#bgVideo{
+    width:fit-content;
+    position:absolute;
+     z-index: -1;
+}
+#background{
+    /* Tem que colocar column por que o box e flex geram conflito e não ficam um em cima do outro */
+    position: relative;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 5px;
+    margin:auto;
+    padding: 20px;
+    text-align:center;
+    width:fit-content;
+
+   
+    
+
+}
